@@ -8,7 +8,7 @@ import ckan.lib.helpers as h
 from datetime import datetime
 
 
-class U54ThemePlugin(plugins.SingletonPlugin):
+class P01ALSThemePlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
 
