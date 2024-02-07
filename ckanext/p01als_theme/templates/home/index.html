@@ -1,0 +1,26 @@
+{% extends "page.html" %}
+{% set homepage_style = ( g.homepage_style or '1' ) %}
+
+{% block subtitle %}{{ _("Welcome") }}{% endblock %}
+
+{% block maintag %}{% endblock %}
+{% block toolbar %}{% endblock %}
+
+{% block content %}
+  <div class="homepage layout-{{ homepage_style }}" >
+
+    <div class="container">
+      {{ self.flash() }}
+    </div>
+    <div id="particles-js">
+    	<div class="container header__title text-center">
+		<h1><span style="color:#00a6ff">A</span><span style="color:#00cd2a">L</span><span style="color:#ff9933">S</span> <span style="color:purple">P01</span> Data Management Portal</h1>
+            <span>Bioinformatics and Biostatistics Core at UC Irvine</span>
+        </div>
+    </div>
+    {% block primary_content %}
+      {% snippet "home/layout{0}.html".format(homepage_style) %}
+    {% endblock %}
+
+  </div>
+{% endblock %}

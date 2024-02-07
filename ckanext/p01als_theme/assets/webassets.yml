@@ -1,0 +1,32 @@
+p01als_css:
+  filters: cssrewrite
+  output: ckanext-p01als_theme/%(version)s_p01als.css
+  contents:
+    - p01als_theme.css
+
+p01als_js:
+  filter: rjsmin
+  output: ckanext-p01als_theme/%(version)s_54.js
+  extra:
+    preload:
+      - base/main
+      - base/ckan
+      - ckanext-p01als_theme/p01als_css
+    contents:
+      - p01als.js
+      - particles-loading.js
+      
+p01als:
+  output: ckanext-p01als_theme/%(version)s_p01als.js
+  extra:
+    preload:
+      - base/main
+      - base/ckan
+      - ckanext-p01als_theme/p01als_css
+  contents:
+    - p01als.js
+    - particles-loading.js
+
+# unused :
+#jquery-ui.js theme_location.js off-canvas.js responsive.css
+

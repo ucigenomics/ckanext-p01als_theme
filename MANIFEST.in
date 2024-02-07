@@ -1,0 +1,2 @@
+include README.rst
+recursive-include ckanext/p01als_theme *.html *.json *.js *.less *.css *.png *.jpg *.woff *.ttf
