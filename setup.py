@@ -16,7 +16,7 @@ setup(
     # http://packaging.python.org/en/latest/tutorial.html#version
     version='1.0.0',
 
-    description='''U54 portal theme for CKAN''',
+    description='''P01ALS portal theme for CKAN''',
     long_description=long_description,
 
     # The project's main homepage.
@@ -51,7 +51,7 @@ setup(
 
 
     # What does your project relate to?
-    keywords='''CKAN U54''',
+    keywords='''CKAN P01ALS''',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
