@@ -18,7 +18,7 @@ class P01ALSThemePlugin(plugins.SingletonPlugin):
 
         toolkit.add_template_directory(config_, 'templates')
         toolkit.add_public_directory(config_, 'public')
-        toolkit.add_resource('assets', 'theme')
+        toolkit.add_resource('assets', 'p01als_theme')
 
     # ITemplateHelpers
     def get_helpers(self):
