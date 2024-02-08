@@ -1,29 +1,30 @@
-p01als_theme_css:
-  output: ckanext-p01als_theme/%(version)s_p01als_theme.css
+p01als_css:
+  filter: cssrewrite
+  output: ckanext-p01als_theme/%(version)s_p01als.css
   contents:
-    - p01als_theme.css
+    - p01als.css
 
-p01als_theme_js:
+p01als_js:
   filter: rjsmin
-  output: ckanext-p01als_theme/%(version)s_p01als_theme.js
+  output: ckanext-p01als_theme/%(version)s_p01als.js
   extra:
     preload:
       - base/main
       - base/ckan
-      - ckanext-p01als_theme/p01als_theme_css
+      - ckanext-p01als_theme/p01als_css
     contents:
-      - p01als_theme.js
+      - p01als.js
       - particles-loading.js
       
-p01als_theme:
-  output: ckanext-p01als_theme/%(version)s_p01als_theme.js
+p01als:
+  output: ckanext-p01als_theme/%(version)s_p01als.js
   extra:
     preload:
       - base/main
       - base/ckan
-      - ckanext-p01als_theme/p01als_theme_css
+      - ckanext-p01als_theme/p01als_css
   contents:
-    - p01als_theme.js
+    - p01als.js
     - particles-loading.js
 
 # unused :
