@@ -12,7 +12,7 @@ p01als_js:
       - base/main
       - base/ckan
       - p01als_theme/p01als_css
-    contents:
+  contents:
       - p01als.js
       - particles-loading.js
       
