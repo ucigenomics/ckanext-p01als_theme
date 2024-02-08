@@ -1,5 +1,4 @@
 p01als_theme_css:
-  filters: cssrewrite
   output: ckanext-p01als_theme/%(version)s_p01als_theme.css
   contents:
     - p01als_theme.css
